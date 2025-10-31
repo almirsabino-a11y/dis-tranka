@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dis Tranka Chaveiro | Araguari - MG</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+  <header>
+    <h1>DIS TRANKA CHAVEIRO</h1>
+    <a href="https://wa.me/5534999880602" target="_blank">WhatsApp</a>
+  </header>
+
+  <section class="hero">
+    <h2>Chaveiro rápido e de confiança 🔑</h2>
+    <p>Especialistas em abertura de carros, troca de fechaduras e confecção de chaves automotivas e residenciais. Atendimento em Araguari - MG.</p>
+    <a href="https://wa.me/5534999880602" class="btn-whats" target="_blank">Falar no WhatsApp</a>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços Prestados</h2>
+    <div class="servicos-grid">
+      <div class="card"><h3>Abertura de Carros</h3><p>Desbloqueio rápido e seguro, sem danos ao veículo.</p></div>
+      <div class="card"><h3>Confecção de Chaves Auto</h3><p>Chaves automotivas com chip e codificação.</p></div>
+      <div class="card"><h3>Abertura de Fechaduras</h3><p>Serviço residencial e comercial com agilidade.</p></div>
+      <div class="card"><h3>Troca de Fechaduras</h3><p>Instalação e substituição seguras.</p></div>
+      <div class="card"><h3>Montagem de Motor Eletrônico</h3><p>Reparo e instalação de sistemas elétricos de portas.</p></div>
+      <div class="card"><h3>Programação de Controles</h3><p>Configuração de controles de portões e automóveis.</p></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato e Localização</h2>
+    <div class="contato-info">
+      <p><strong>📍 Endereço:</strong> Rua Dona Cesária, nº 300 - Bairro Goiás, Araguari/MG</p>
+      <p><strong>📞 Telefone:</strong> (34) 99988-0602</p>
+      <p><strong>📸 Instagram:</strong> <a href="https://instagram.com/distranka_chaveiro" target="_blank">@distranka_chaveiro</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Dis Tranka Chaveiro | Desenvolvido por TechSafeDigital 🚀
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('#servicos h2, .card, #contato h2, .contato-info p').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
